@@ -27,7 +27,7 @@ index 61378cd..8dec247 100644
  
  file(GLOB_RECURSE BROTLI_DEC_SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} c/dec/*.c)
  add_library(brotlidec ${BROTLI_DEC_SOURCES})
-+add_library(brotlidec-static STATIC ${BROTLI_COMMON_SOURCES})
++add_library(brotlidec-static STATIC ${BROTLI_DEC_SOURCES})
  
  file(GLOB_RECURSE BROTLI_ENC_SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} c/enc/*.c)
  add_library(brotlienc ${BROTLI_ENC_SOURCES})
